@@ -1,3 +1,4 @@
+
 #include <Arduino.h>
 #include <BLEDevice.h>
 #include <BLEUtils.h>
@@ -19,7 +20,7 @@ static BLERemoteCharacteristic* pRemoteCharacteristic;
 static BLEAdvertisedDevice* myDevice;
 
 // TODO: define new global variables for data collection
-static String serverName = "";  // ✅ 改这里！String而不是std::string
+static String serverName = "";  //
 static unsigned long lastNamePrint = 0; // print timer
 const unsigned long namePrintInterval = 5000;
 
@@ -178,3 +179,4 @@ void loop() {
 
   delay(1000); // Delay a second between loops.
 } // End of loop
+
